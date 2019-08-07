@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  margin-bottom: 25px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+li a:hover:not(.active) {
+  color: orange;
+}
+
+.active {
+  background-color: blue;
+}
+
+fieldset {
+  height: 250px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-items: center;
+  border: none;
+  font-size: 1.5rem;
+}
+
+label {
+  margin-left: 25px;
+  font-weight: bolder;
+}
+
+.number-dogs {
+  height: 50px;
+  width: 100px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.breed-input {
+  height: 50px;
+  width: 500px;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.submit-button,
+.search-button {
+  display: block;
+  width: 300px;
+  height: 75px;
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.search-feedback {
+  width: 50%;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.image-container {
+  display: inline-block;
+  justify-content: center;
+  justify-items: center;
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+  margin: 1%;
+  border: 2px solid black;
+}
+
+.breed-image {
+  display: flex;
+  justify-content: center;
+}

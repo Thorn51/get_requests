@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search Dog Breeds</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Random Dogs</a></li>
+        <li><a href="breeds.html" class="active">Search Breeds</a></li>
+      </ul>
+    </nav>
+
+    <form action="get" class="search-breeds">
+      <fieldset>
+        <label for="breed">Enter a dog breed to see an image?</label>
+        <input
+          type="search"
+          placeholder="e.g., hound, retriever, bulldog"
+          name="quantity"
+          class="breed-input"
+          required
+        />
+        <input type="submit" value="Search Breed!" class="search-button" />
+        <p class="search-feedback" hidden>
+          Sorry, but we don't have access to that breed. Please try again!
+        </p>
+      </fieldset>
+    </form>
+
+    <section class="breed-image"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

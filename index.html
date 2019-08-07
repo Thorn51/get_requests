@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dog App | Simple Get Requests</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Random Dogs</a></li>
+        <li><a href="breeds.html">Search Breeds</a></li>
+      </ul>
+    </nav>
+
+    <form action="get" class="dog-identification">
+      <fieldset>
+        <label for="quantity"
+          >How many dogs would you like to look at (1-50)?</label
+        >
+        <input
+          type="text"
+          value="3"
+          name="quantity"
+          class="number-dogs"
+          required
+        />
+        <input type="submit" value="Get Dog Images!" class="submit-button" />
+      </fieldset>
+    </form>
+
+    <section class="dog-images"></section>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
